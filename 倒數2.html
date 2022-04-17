@@ -229,6 +229,17 @@ function timeDifference(endT, endName = `目标时间`, obj) {
             }
             audioAutoPlay();
         });
+
+        document.addEventListener('click', function () {
+            function audioAutoPlay() {
+                var audio = document.getElementById('bgmusic');
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+            }
+            audioAutoPlay();
+        });
     </script>
 
 </body>
