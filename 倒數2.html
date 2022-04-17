@@ -9,7 +9,7 @@
         body {
             overflow: hidden;
             margin: 0;
-            background: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_match%2F0%2F11695386033%2F0.jpg&refer=http%3A%2F%2Finews.gtimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643859661&t=56c2c6c10490dd71ced649cc1dc90ac0);
+            background: url(img/numberBG.jpg);
             background-size: 100% 100%;
         }
 
@@ -209,9 +209,12 @@ function timeDifference(endT, endName = `目标时间`, obj) {
 }
 
     </script>
-    <audio id="bgmusic" src="http://music.163.com/song/media/outer/url?id=1851244378.mp3" autoplay="autoplay"
+    <audio id="bgmusic" src="./audio/Perfect.mp3" autoplay="autoplay"
         loop="loop" style="display: block; width: 3%; height:3%;"></audio>
     <script type="text/javascript">
+        document.getElementById("bgmusic").volume = 0.2;
+
+
         document.addEventListener('DOMContentLoaded', function () {
             function audioAutoPlay() {
                 var audio = document.getElementById('bgmusic');
