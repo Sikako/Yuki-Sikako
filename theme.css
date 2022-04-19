@@ -14,6 +14,7 @@ html, body{
     background-position: 10% 60%;
     background-attachment: scroll;
     background-size: cover;
+    width: 100%;
     height: 40vh;
     margin: 0;
     padding-top: 60vh;
@@ -31,18 +32,24 @@ html, body{
     display: block;
     font-family: 'Caveat', cursive;
     font-size: .6em;
+    /* font-size: 5vw; */
 }
 
-ul {
+nav {
+    text-align: center;
+}
+
+nav ul {
+    text-align: center;
     list-style-type: none;
-    margin: 0;
+    margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: #333;
   }
   
   li {
-    float: left;
+    display: inline-block;
   }
   
   li a {
@@ -57,6 +64,19 @@ ul {
   li a:hover {
     background-color: #111;
   }
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
 
 .fixed-button{
     background: rgba(20,20,20,.5);
@@ -89,7 +109,7 @@ ul {
     padding: 1em 2.4em;
 }
 .sub-heading{
-    font-family: 'Caveat', cursive;
+    font-family: 'LiSong Pro Light', cursive;
     font-size: 3em;
     margin-top: 2em;
 }
