@@ -6,7 +6,22 @@
     <link rel="stylesheet" type="text/css" href="theme.css"> 
     <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
     <link href="https://fonts.googleapis.com/css?family=Caveat|Quicksand&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/favicon.ico"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon and touch icons -->
+    <link type="image/x-icon" href="/img/favicon.ico" rel="icon" />
+    <link type="image/x-icon" href="/img/favicon.ico" rel="shortcut icon" />
+    <link type="image/x-icon" href="/img/favicon.ico" rel="bookmark" />
+    <!-- Favicon for Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="fac.png" />    
+    <!-- Favicon for Safari Web Clips-->
+    <link rel="apple-touch-icon-precomposed" href="fac.png" />
+    <link rel='apple-touch-icon-precomposed' sizes="76x76" href="fac.png" />
+    <link rel='apple-touch-icon-precomposed' sizes="114x114" href="fac.png" />
+    <link rel='apple-touch-icon-precomposed' sizes="120x120" href="fac.png" />
+    <link rel='apple-touch-icon-precomposed' sizes="144x144" href="fac.png" />
+    <link rel='apple-touch-icon-precomposed' sizes="152x152" href="fac.png" />
   </head>
   <body>
     <header class="header">
@@ -16,59 +31,62 @@
       </h1>
     </header>
     <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a> 
-    <!--nav--> 
-    <nav id="navbar">
-      <ul>
-        <li><a href="./3D_photos.html">Photos</a></li>
-        <li><a href="./倒數2.html">天數</a></li>
-      </ul>
-    </nav>
+    <div w3-include-html="nav.html"></div>
     
-    <section class="section">
-      <h2 class="sub-heading">親愛的欣儀</h2>
-      <p>Church wedding debt celebrate macarena embarrassing glitter  Will. Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib, guitar acoustic bass photobooth photographer limousine sparkles beautiful sparkles guitar acoustic bass beautiful. Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.
-      </p>
-    </section>
-    <section class="section">
-      <h2 class="sub-heading">The Details</h2>
-      <div class="details">
-        <i class="fas fa-calendar-check"></i>
-        <h3 class="details-heading">When</h3>
-        <p>January 1, 2020</p>
-        <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
-      </div>
-      <div class="details">
-        <i class="fas fa-map-marked-alt"></i>
-        <h3 class="details-heading">Location</h3>
-        <p><a rel="noopener" href="#">Grand Venue Place</a>, City, State</p>
-        <img class="resort-image" src="./img/resort.jpeg" alt="Resort" />
-      </div>
-      <div class="details">
-        <i class="fas fa-suitcase"></i>
-        <h3 class="details-heading">Lodging</h3>
-        <p>DJ Jazzy Nupitals guitar acoustic bass embarrassing first aisle guitar acoustic bass cheers glitter . Macarena fish aisle aisle wedding, forever happy salad  drunk groomsman overpriced florist embarrassing coworkers tuxedo aisle guitar acoustic bass champagne bouquet. Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena. DJ Jazzy Nupitals prime rib centerpieces centerpieces cake dessert, cake dessert tuxedo aisle seat covers aisle.</p>
-        <p>Church Will chicken unity sparkles Bryna cake dessert, centerpieces aisle Will debt guitar acoustic bass glitter . Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
-      </div>
-      <div class="details">
-        <i class="fas fa-plane-departure"></i>
-        <h3 class="details-heading">Flights</h3>
-        <p>Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena.</p>
-        <p>Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
-      </div>
-      <div class="details">
-        <i class="fas fa-asterisk"></i>
-        <h3 class="details-heading">Other Notes</h3>
-        <p>Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
-        <p>Also, your presence is the only present we desire. No gift required.</p>
-      </div>
-      <div class="details">
-        <i class="fas fa-reply"></i>
-        <h3 class="details-heading" id="rsvp">RSVP</h3>
-        <p>[Embed your RSVP form here]</p>
-        <!-- Include Embedded link of Google Form here in place of # -->
-        <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-      </div>
-    </section>
+    <div class="content">
+      <section class="section">
+        <h2 class="sub-heading">親愛的欣儀</h2>
+        <p>Church wedding debt celebrate macarena embarrassing glitter  Will. Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib, guitar acoustic bass photobooth photographer limousine sparkles beautiful sparkles guitar acoustic bass beautiful. Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="sub-heading">The Details</h2>
+        <div class="details">
+          <i class="fas fa-calendar-check"></i>
+          <h3 class="details-heading">When</h3>
+          <p>January 1, 2020</p>
+          <a title="Add to Calendar" rel="noopener" href="#" target="_blank" rel="nofollow">Add to Calendar</a>
+        </div>
+        <div class="details">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3 class="details-heading">Location</h3>
+          <p><a rel="noopener" href="#">Grand Venue Place</a>, City, State</p>
+          <img class="resort-image" src="./img/resort.jpeg" alt="Resort" />
+        </div>
+        <div class="details">
+          <i class="fas fa-suitcase"></i>
+          <h3 class="details-heading">Lodging</h3>
+          <p>DJ Jazzy Nupitals guitar acoustic bass embarrassing first aisle guitar acoustic bass cheers glitter . Macarena fish aisle aisle wedding, forever happy salad  drunk groomsman overpriced florist embarrassing coworkers tuxedo aisle guitar acoustic bass champagne bouquet. Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena. DJ Jazzy Nupitals prime rib centerpieces centerpieces cake dessert, cake dessert tuxedo aisle seat covers aisle.</p>
+          <p>Church Will chicken unity sparkles Bryna cake dessert, centerpieces aisle Will debt guitar acoustic bass glitter . Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
+        </div>
+        <div class="details">
+          <i class="fas fa-plane-departure"></i>
+          <h3 class="details-heading">Flights</h3>
+          <p>Ring wedding beautiful tuxedo fish toast, veil Bryna aisle centerpieces. Cheers embarrassing bouquet bouquet Bryna overpriced florist DJ Jazzy Nupitals Bryna macarena.</p>
+          <p>Magic sparkles father bridesmaid  champagne bouquet wedding mother. Magic first dancing fish chicken champagne debt mother guitar acoustic bass.</p>
+        </div>
+        <div class="details">
+          <i class="fas fa-asterisk"></i>
+          <h3 class="details-heading">Other Notes</h3>
+          <p>Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.</p>
+          <p>Also, your presence is the only present we desire. No gift required.</p>
+        </div>
+        <div class="details">
+          <i class="fas fa-reply"></i>
+          <h3 class="details-heading" id="rsvp">RSVP</h3>
+          <p>[Embed your RSVP form here]</p>
+          <!-- Include Embedded link of Google Form here in place of # -->
+          <!-- <iframe title="RSVP" src="" style="width:100%;" height="960" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+        </div>
+      </section>
+    </div>
+    <audio id="bgmusic" src="./audio/Perfect.mp3" autoplay="autoplay"
+    loop="loop" style="display: block; width: 3%; height:3%;"></audio>
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+      w3.includeHTML();
+    </script>
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/nav.js"></script>
     <script defer>
@@ -79,6 +97,27 @@
       function hideButton() {
         rsvpButton.style.display = 'none';
       }   
+    </script>
+    <script type="text/javascript">         // audio
+      document.getElementById("bgmusic").volume = 0.2;
+
+
+      document.addEventListener('DOMContentLoaded', function () {
+          function audioAutoPlay() {
+              var audio = document.getElementById('bgmusic');
+              audio.play();
+              document.addEventListener("WeixinJSBridgeReady", function () {
+                  audio.play();
+              }, false);
+              document.addEventListener("click", function(){
+                audio.play();
+              }, false);
+              document.addEventListener("scroll", function() {
+                audio.play();
+              }, false);
+          }
+          audioAutoPlay();
+      });
     </script>
   </body>
 </html>

@@ -56,6 +56,7 @@
 </head>
 
 <body>
+    <div w3-include-html="nav.html"></div>
 <!-- 请在177行修改目标时间,以及目标时间名字 -->
 <!-- 200行修改过去时间想说的话 -->
 <!-- 205行修改未来时间想说的话 -->
@@ -213,33 +214,9 @@ function timeDifference(endT, endName = `目标时间`, obj) {
 }
 
     </script>
-    <audio id="bgmusic" src="./audio/Perfect.mp3" autoplay="autoplay"
-        loop="loop" style="display: block; width: 3%; height:3%;"></audio>
-    <script type="text/javascript">
-        document.getElementById("bgmusic").volume = 0.2;
-
-
-        document.addEventListener('DOMContentLoaded', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('bgmusic');
-                audio.play();
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    audio.play();
-                }, false);
-            }
-            audioAutoPlay();
-        });
-
-        document.addEventListener('click', function () {
-            function audioAutoPlay() {
-                var audio = document.getElementById('bgmusic');
-                audio.play();
-                document.addEventListener("WeixinJSBridgeReady", function () {
-                    audio.play();
-                }, false);
-            }
-            audioAutoPlay();
-        });
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script>
+      w3.includeHTML();
     </script>
 
 </body>
