@@ -32,29 +32,38 @@
       </h1>
     </header>
     <a data-scroll class="fixed-button" href="#rsvp" id="rsvpButton">RSVP</a> 
-
     <nav id="navbar" class="nav navbar-inverse">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Home</a>
-      </div>
-      <ul class="nav nav-tabs navbar-nav">
-        <li class="active"><a data-toggle="tab" href="#first">Page1</a></li>
-        <li><a data-toggle="tab" href="#second">Photos</a></li>
-        <li><a href="./倒數2.html">天數</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
-          <ul class="dropdown-menu">
-              <li><a href="#first">First</a></li>
-              <li><a href="#second">Second</a></li>
-              <li><a href="#">Third</a></li>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> 
+         </button>
+          <a class="navbar-brand" href="index.html"><img height="50px" position="relative" style="position: relative; top: -1.5vh;" src="fac.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav nav-tabs navbar-nav">
+            <li class="active"><a data-toggle="tab" href="#first">Page1</a></li>
+            <li><a data-toggle="tab" href="#second">Photos</a></li>
+            <li><a href="./倒數2.html">天數</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret" style="color: antiquewhite;"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#first">First</a></li>
+                <li><a href="#second">Second</a></li>
+                <li><a href="#">Third</a></li>
+              </ul>
+            </li>
           </ul>
-      </li>
-      </ul>
+        </div>
+      </div>
     </nav>
     
     <div class="content tab-content">
-      <section class="section in tab-pane fade active" id="first">
-        <h2 class="sub-heading">Overview</h2>
-        <p>Church wedding debt celebrate macarena embarrassing glitter  Will. Forever happy salad  cheers photobooth photographer limousine photobooth photographer limousine prime rib, guitar acoustic bass photobooth photographer limousine sparkles beautiful sparkles guitar acoustic bass beautiful. Cake dessert mother guitar acoustic bass cheers, uncle joe seat covers guitar acoustic bass macarena seat covers cake dessert embarrassing.
+      <section class="section tab-pane fade in active" id="first">
+        <h2 class="sub-heading">Who is She?</h2>
+        <p>
+          它叫做林欣儀，深深的把我吸引的女孩，想把她抱緊緊的女孩。看著她就覺得開心，看到她笑就覺得心情好。
         </p>
       </section>
       <section class="section tab-pane fade" id="second">
@@ -98,14 +107,14 @@
         </div>
       </section>
     </div>
-    <audio id="bgmusic" src="./audio/Perfect.mp3" autoplay="autoplay"
+    <!-- <audio id="bgmusic" src="./audio/Perfect.mp3" autoplay="autoplay" -->
     loop="loop" style="display: block; width: 3%; height:3%;"></audio>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script>
       w3.includeHTML();
